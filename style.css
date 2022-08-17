@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0
+}
+.cover{
+    height: 100vh;
+    background-color: black;
+    background-image: url('./assets/thumbnail.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.title{
+    height: 544px;
+    width: 1124px;
+    display: flex;
+    align-items: center;
+    margin-left: 750px;
+}
+.titletext h1{
+    color: red;
+    font-family: 'Piedra', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 167px;
+    text-align: center;
+    animation: animation1 5s infinite;
+    /* border: 1px solid #000000; */
+}
+.title .today{
+    color: white;
+}
+.peristiwatitle{
+    height: 100vh;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.peristiwatitle h1{
+    font-family: 'Piedra', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 125px;
+    text-align: center;
+    color: #FFFFFF;
+    animation:typing 3.5s steps(40, end) infinite;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.peristiwamenjelangproklamasi{
+    height: 100vh;
+    background-color: red;
+}
+.peristiwamenjelangproklamasi h3{
+    font-family: 'Piedra';
+    color: white;
+    font-size: 30px;
+    animation:typing 5s steps(80, end) infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 200;
+}
+.card-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+.card{
+    height: 234px;
+    width: 350px;
+    border-radius: 24px;
+    overflow: hidden;
+    transition: 1s;
+    margin-right: 40px;
+    background-color: white;
+}
+.card:hover{
+    height: 424px;
+}
+.deskripsi h4{
+    text-align: center;
+    font-family: 'Piedra';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 15px;
+}
+.deskripsi p{
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 9px 29px 37px 29px;
+    overflow: hidden;
+}
+.proklamasi{
+    height: 100vh;
+    background-color: black;
+    background-image: url('./assets/proklamasi.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.aftermerdeka{
+    height: 100vh;
+}
+.aftermerdeka p{
+    background-color: red;
+    padding-top: 10px;
+    font-family: 'Piedra';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+.cardwrapperwar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 435px;
+    margin: 0;
+    background-color: red;
+}
+.cardwrapperwar p{
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 9px 29px 37px 29px;
+    overflow: hidden;
+    background-color: white;
+}
+.card .deskripsi p{
+    padding: 0;
+    color: black;
+}
+@keyframes animation1{
+    0%{
+        transform: scale(0);
+    }
+    20%{
+        transform: scale(1.1);
+    }
+    30%{
+        transform: scale(1);
+    }
+    80%{
+        transform: scale(1);
+    }
+    90%{
+        transform: scale(1.1);
+        
+    }
+    100%{
+        transform: scale(0);
+    }
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
